@@ -17,16 +17,18 @@ const Home: React.FC = () => {
   const setupPluginTest = async () => {
     const rId = await CapacitorIntents.registerBroadcastReceiver({filters: [action]}, async (data) => {
       // data is a JS Object but could contain any structure
-      console.dir(data);
-      const extras = JSON.parse(data['extras']);
-      console.dir(extras);
+      console.dir(JSON.stringify(data));
       console.log(receiverId);
 
-      if (extras['testValue'] === "Test String" && receiverId !== null) {
-        setTestState(true);
-      } else {
-        setTestState(false);
-      }
+
+      const hasResulInfo = Object.prototype.hasOwnProperty.call(data.extras, 'testValue')
+      if (hasResulInfo) {
+        if (data.extras['testValue'] === "Test String" && receiverId !== null) {
+          setTestState(true);
+        } else {
+          setTestState(false);
+        }
+      } 
 
       // now unregister
       if(receiverId !== null) {
