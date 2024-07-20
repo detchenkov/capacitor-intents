@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@capacitor/app": "^6.0.0",
-    "@capacitor/core": "^6.1.1",
+    "@capacitor/core": "^6.0.0",
     "@capacitor/haptics": "^6.0.0",
     "@capacitor/keyboard": "^6.0.1",
     "@capacitor/status-bar": "^6.0.0",
@@ -28,8 +28,8 @@
     "react-router-dom": "^5.3.4"
   },
   "devDependencies": {
-    "@capacitor/android": "^6.1.1",
-    "@capacitor/cli": "^6.1.1",
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/cli": "^6.0.0",
     "@testing-library/dom": "^9.3.4",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.3.1",
