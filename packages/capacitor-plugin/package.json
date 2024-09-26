@@ -61,7 +61,7 @@
     "prettier": "^2.8.8",
     "prettier-plugin-java": "~2.1.0",
     "rimraf": "^3.0.2",
-    "rollup": "^3.21.8",
+    "rollup": "^3.29.5",
     "typescript": "^5.0.4",
     "semantic-release": "^21.1.1"
   },
