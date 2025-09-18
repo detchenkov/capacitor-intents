@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/detchenkov/capacitor-intents/compare/v1.4.0...v1.4.1) (2025-09-18)
+
+
+### Bug Fixes
+
+* problem with android 14 ([f12c9d1](https://github.com/detchenkov/capacitor-intents/commit/f12c9d1f0fcb99883bc144293d321deb9e494178))
+
 ## [1.4.1-next.1](https://github.com/detchenkov/capacitor-intents/compare/v1.4.0...v1.4.1-next.1) (2025-09-18)
 
 
