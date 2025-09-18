@@ -9,6 +9,6 @@
     "shipit-next": "pnpm turbo shipit-next"
   },
   "devDependencies": {
-    "turbo": "^1.9.6"
+    "turbo": "^1.13.4"
   }
 }

@@ -208,7 +208,10 @@ public class CapacitorIntents extends Plugin {
             }
         );
 
-        this.getContext().registerReceiver(receiverMap.get(callBackID), ifilt);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE)
+            this.getContext().registerReceiver(receiverMap.get(callBackID), ifilt, Context.RECEIVER_EXPORTED);
+        else
+            this.getContext().registerReceiver(receiverMap.get(callBackID), ifilt);
     }
 
     private void removeReceiver(String callBackID) {
